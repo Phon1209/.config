@@ -37,24 +37,12 @@ window#waybar {
 #clock {
     margin-right: 4px;
     font-weight: bold;
-    color: @badgeColor;
-    background-color: @badgeBackgroundColor;
+    color: @utilBrand-200;
+    /* background: @utilBrand-200; */
     border-radius: 8px;
-    padding: 2px 10px;
+    padding: 2px;
     font-size: 14px;
-    border: 1px solid red;
-}
-
-
-#tray {
-  
-}
-#tray:hover {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border-radius: 8px;
-  padding: 2px 10px;
-  font-size: 14px;
+    /* border: 1px solid red; */
 }
 
 
@@ -108,4 +96,13 @@ window#waybar {
 #workspaces button.empty:hover,
 #workspaces button.empty.active {
   color: black;
+}
+
+/* Power Button */
+#custom-exit {
+  color: @utilBrand-200;
+  border-radius: 8px;
+  padding: 2px;
+  font-size: 14px;
+  margin-left: 4px;
 }
