@@ -7,13 +7,13 @@
       "*": 5
     }
   },
-  "hyprland/window": {
-    "rewrite": {
-      "(.*) - Visual Studio Code": " $1",
-      "(.*) — Mozilla Firefox": " $1"
-    },
-    "separate-outputs": true
-  },
+  // "hyprland/window": {
+  //   "rewrite": {
+  //     "(.*) - Visual Studio Code": " $1",
+  //     "(.*) — Mozilla Firefox": " $1"
+  //   },
+  //   "separate-outputs": true
+  // },
   "tray": {
     // "icon-size": 21,
     "spacing": 10,
@@ -25,14 +25,14 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "format": "  {:%OH:%M}",
+    "format": "{:%OH:%M}",
     "format-alt": "{:%Y-%m-%d}",
     "calendar": {
       "mode": "month"
     }
   },
   "cpu": {
-    "format": "{usage}% ",
+    "format": " {usage}%",
     "tooltip": true
   },
   "temperature": {
@@ -41,7 +41,7 @@
     "critical-threshold": 80,
     "tooltip": false,
     // "format-critical": "{temperatureC}°C {icon}",
-    "format": "{temperatureC}°C {icon}",
+    "format": "{icon} {temperatureC}°C",
     "format-icons": [
       "",
       "",
@@ -54,11 +54,11 @@
       "warning": 50,
       "critical": 30
     },
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
+    "format": "{icon} {capacity}% ",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": [
@@ -71,21 +71,20 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": " {essid}",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "",
     "tooltip": true,
-    "tooltip-format": "{ifname} via {gwaddr}"
+    "tooltip-format-wifi": "{ifname} via {essid} w/ {gwaddr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-ethernet": "{ifname} via {gwaddr}"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-bluetooth-muted": "{icon} ",
+    "format-muted": "",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -94,7 +93,6 @@
       "portable": "",
       "car": "",
       "default": [
-        "",
         "",
         ""
       ]
@@ -103,8 +101,8 @@
   },
   "custom/exit": {
     "format": "",
+    "tooltip": false,
     "tooltip-format": "Powermenu",
-    "on-click": "wlogout -b 4",
-    "tooltip": false
+    "on-click": "wlogout -b 4"
   }
 }
