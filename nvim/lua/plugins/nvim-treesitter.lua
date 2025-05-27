@@ -3,6 +3,14 @@ return {{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
     local config = require("nvim-treesitter.configs")
     config.setup({
       auto_install = true,
+      ensure_installed = {
+        'lua',
+        'astro',
+        'typescript',
+        'javascript',
+        'tsx',
+        'html',
+      },
       highlight = { enable = true },
       indent = { enable = true },
     })
