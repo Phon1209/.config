@@ -1,5 +1,10 @@
 return {
   {
+    "echasnovski/mini.hipatterns",
+    event = "BufReadPre",
+    opts = {},
+  },
+  {
     "nvim-telescope/telescope-ui-select.nvim",
   },
   {
