@@ -11,10 +11,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
 -- Setup lazy.nvim
-require("lazy")
-.setup({
+require("lazy").setup({
 	spec = {
 		{
 			"LazyVim/LazyVim",
@@ -32,7 +30,7 @@ require("lazy")
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		{ import = "lazyvim.plugins.extras.lang.tailwind" },
---		{ import = "lazyvim.plugins.extras.coding.copilot" },
+		--		{ import = "lazyvim.plugins.extras.coding.copilot" },
 		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		{ import = "plugins" },
 	},
@@ -65,19 +63,12 @@ require("lazy")
 	debug = false,
 })
 
-
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
-
+vim.cmd.colorscheme("catppuccin")
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_install = {"lua", "javascript", "astro", "css"},
-  highlight = {enable = true},
-  indent = {enable = true}
+	ensure_install = { "lua", "javascript", "astro", "css" },
+	highlight = { enable = true },
+	indent = { enable = true },
 })
-
-
-
-
-
