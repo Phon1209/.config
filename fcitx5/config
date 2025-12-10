@@ -12,7 +12,7 @@ ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
 0=Control+space
-1=Zenkaku_Hankaku
+1=Caps_Lock
 2=Hangul
 
 [Hotkey/AltTriggerKeys]
