@@ -7,6 +7,7 @@
       "*": 5
     }
   },
+  "hyprland/window": {},
   // "hyprland/window": {
   //   "rewrite": {
   //     "(.*) - Visual Studio Code": " $1",
@@ -18,7 +19,7 @@
     // "icon-size": 21,
     "spacing": 10,
     "icons": {
-      "blueman": "bluetooth",
+      "blueman": "bluetooth"
       //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
     }
   },
@@ -28,7 +29,7 @@
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "format": "{:%OH:%M}",
     "format-alt": "{:%Y-%m-%d}",
-//    "locale": "{:%a %m %d}",
+    //    "locale": "{:%a %m %d}",
     "calendar": {
       "mode": "month"
     },
@@ -47,11 +48,7 @@
     "tooltip": false,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} {temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", ""]
   },
   "battery": {
     "states": {
@@ -59,25 +56,19 @@
       "warning": 50,
       "critical": 30
     },
-    "format": "{icon} {capacity}% ",
+    "format": "{icon} {capacity}%",
     "format-full": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
+    "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "",
-    "format-ethernet": "",
+    "format-ethernet": "",
     "format-disconnected": "",
     "tooltip": true,
     "tooltip-format-wifi": "{ifname} via {essid} w/ {gwaddr}",
@@ -97,10 +88,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        ""
-      ]
+      "default": ["", ""]
     },
     "on-click": "pavucontrol"
   },
