@@ -48,7 +48,7 @@ window#waybar {
   /* background: @utilBrand-200; */
   border-radius: 8px;
   padding: 0px 6px;
-  font-size: 14px;
+  font-size: 20px;
   /* border: 1px solid red; */
 }
 
@@ -62,10 +62,10 @@ window#waybar {
 
 #workspaces button {
   /* padding: 5px; */
-  min-width: 28px;
-  min-height: 28px;
+  min-width: 40px;
+  min-height: 40px;
   padding: 0px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 
   border-radius: 50%;
@@ -112,4 +112,6 @@ window#waybar {
   padding: 2px;
   font-size: 14px;
   margin-left: 4px;
+  margin-right: 8px;
+  font-size: 20px;
 }
