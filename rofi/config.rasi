@@ -5,7 +5,7 @@ configuration {
 
   show-icons: true;
   font: "FiraCode Nerd Font Propo Medium 16";
-  modi: "window,drun,filebrowser";
+  modi: "window,drun,filebrowser,emoji,calc";
   case-sensitive: false;
 
 
@@ -18,5 +18,5 @@ configuration {
   // font: "JetBrainsMono Nerd Font Medium 10";
 }
 
-@theme "~/.config/rofi/theme.rasi"
+// @theme "~/.config/rofi/theme.rasi"
 
